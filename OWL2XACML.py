@@ -90,3 +90,11 @@ if __name__ == '__main__':
 
     print('------ print whole policy ----------')
     print(ET.tostring(root, encoding='utf-8').decode('utf-8'))
+
+    #uncomment the below code the save the generated XACML policy in a file path
+
+    # print('--------saving policy---------')
+    # # Save the root element to an XML file
+    # output_xml_file = "output_policy.xml"  # Replace with the desired output file path
+    # tree = ET.ElementTree(root)
+    # tree.write(output_xml_file, encoding="utf-8", xml_declaration=True)
