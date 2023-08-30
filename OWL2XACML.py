@@ -87,6 +87,8 @@ if __name__ == '__main__':
         for action in value:
             root.append(add_rule(subject, action, resource))
 
+    #if none of the above rules are permitted, then deny
+    root.append(ET.fromstring('<Rule RuleId="Deny everything else" Effect="Deny"></Rule>'))
 
     print('------ print whole policy ----------')
     print(ET.tostring(root, encoding='utf-8').decode('utf-8'))
