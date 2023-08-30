@@ -1,10 +1,11 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
+import xml.etree.ElementTree as ET
+import uuid
 
 def get_rule_string():
     return '''
-  <Rule RuleId="urn:oasis:names:tc:xacml:2.0:conformance-test:IIIA001:rule1" Effect="Permit">
+  <Rule RuleId="rule-{}" Effect="Permit">
     <Description>
       {}
     </Description>
@@ -29,7 +30,8 @@ def get_rule_string():
   </Rule>'''
 
 def add_rule(subject, action, resource, description="Add rule description here"):
-    rule_string = get_rule_string().format(description, subject, action, resource)
+    rule_id = str(uuid.uuid1())
+    rule_string = get_rule_string().format(rule_id, description, subject, action, resource)
     rule = ET.fromstring(rule_string)
     print(ET.tostring(rule, encoding='utf8').decode('utf8'))
     return rule
@@ -46,7 +48,6 @@ def get_xacml_root_template():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    import xml.etree.ElementTree as ET
 
     # Load the XML content from a file
     xml_file_path = "/Users/rukman/SETU/research/Ontology/university_owl_xml2.owl"  # Replace with the actual file path
