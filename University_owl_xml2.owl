@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/rukman/ontologies/2023/1/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/rukman/ontologies/2023/1/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/rukman/ontologies/2023/1/untitled-ontology-10#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resourses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SETU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rooms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Access_read"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Access_read_write_delete_update"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#studentName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Annetta_stack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bernard_Butler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Data_mining"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Enterprise_software_systems"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fiona_Lynch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ganesh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jimmy_McGibney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kiran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richard_Frisby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rukmangathan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shioban_dhronan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#room3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Msc_Computing_(Enterprise_Software_Systems)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Msc_Computing_(Information_systems_management)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Staff:All"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UI/UX_design"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+        <Class IRI="#SETU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Resourses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <Class IRI="#Resourses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Faculty"/>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <Class IRI="#Resourses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resourses"/>
+        <Class IRI="#SETU"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rooms"/>
+        <Class IRI="#Building"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://rdf.muninn-project.org/ontologies/organization#Person"/>
+        <Class IRI="#Resourses"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Building"/>
+        <Class IRI="#Course"/>
+        <Class IRI="#Module"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Annetta_stack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Bernard_Butler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Enterprise_software_systems"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Fiona_Lynch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Ganesh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Jimmy_McGibney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Kiran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Richard_Frisby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Rukmangathan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Shioban_dhronan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Building"/>
+        <NamedIndividual IRI="#room1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Building"/>
+        <NamedIndividual IRI="#room2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Building"/>
+        <NamedIndividual IRI="#room3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Msc_Computing_(Enterprise_Software_Systems)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Msc_Computing_(Information_systems_management)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Staff"/>
+        <NamedIndividual IRI="#Staff:All"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#UI/UX_design"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Access_read_write_delete_update"/>
+        <NamedIndividual IRI="#Bernard_Butler"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Access_read"/>
+        <NamedIndividual IRI="#Rukmangathan"/>
+        <NamedIndividual IRI="#Data_mining"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Access_read"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Access_read_write_delete_update"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#studentName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
