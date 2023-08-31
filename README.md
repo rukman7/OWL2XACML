@@ -37,6 +37,9 @@ console.log(decision)
 
 Refer the below image for the data model that is currently supported. If you are creating your own ontology make sure the ontology is created based on this data model.
 
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+<a name="logo"><img align="center" src=https://github.com/rukman7/OWL2XACML/blob/main/assets/University_structure.jpeg alt="Data model" style="width:100%;height:100%"/></a>
+
 ## Screenshots
 
 #### Sample request
@@ -63,6 +66,15 @@ Refer the below image for the data model that is currently supported. If you are
 
 #### Sample response - Permit
 
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+<a name="logo"><img align="center" src=https://github.com/rukman7/OWL2XACML/blob/main/assets/Permit.jpeg alt="Permit" style="width:100%;height:100%"/></a>
+
 #### Sample response - Deny
 
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+<a name="logo"><img align="center" src=https://github.com/rukman7/OWL2XACML/blob/main/assets/Deny.jpeg alt="Deny" style="width:100%;height:100%"/></a>
+
 #### Sample python output of the python script
+
+<h1 align="center" style="display: block; font-size: 2.5em; font-weight: bold; margin-block-start: 1em; margin-block-end: 1em;">
+<a name="logo"><img align="center" src=https://github.com/rukman7/OWL2XACML/blob/main/assets/Python_script.png alt="Console output" style="width:100%;height:100%"/></a>
